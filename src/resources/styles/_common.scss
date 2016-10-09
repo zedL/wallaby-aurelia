@@ -1,0 +1,233 @@
+@import "../../../node_modules/material-design-lite/src/_color-definitions";
+@import "../../../node_modules/material-design-lite/src/_variables";
+
+
+/* disable content selection*/
+
+.not-selectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -khtml-user-select: none;
+}
+
+/* enable content selection*/
+
+.selectable {
+    -webkit-touch-callout: initial;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    -khtml-user-select: text;
+}
+
+/* remove tab hihglight color*/
+
+.no-tap-highlight-color * {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+
+
+/* MDL drawer size change  1024px + 1*/
+@media screen and (min-width: $layout-screen-size-threshold + 1) {
+  $mdl-layout__drawer-width: 300px;
+  .mdl-layout__drawer{
+    width: $mdl-layout__drawer-width;
+    -webkit-transform: translateX(-$mdl-layout__drawer-width);
+            transform: translateX(-$mdl-layout__drawer-width);
+  }
+}
+
+
+/* .scroll-y {*/
+/*     overflow-x: hidden;*/
+/*     overflow-y: auto;*/
+/*     -webkit-overflow-scrolling: touch;*/
+/*     -ms-overflow-style: -ms-autohiding-scrollbar;*/
+/* }*/
+
+/* .touch-on-pan-y {*/
+/*     -ms-touch-action: pan-y;*/
+/*     touch-action: pan-y;*/
+/* }*/
+
+
+/*  .mdl-button:focus, .mdl-button:active:focus, .mdl-button.active:focus {*/
+/*      outline: none;*/
+/*      outline-offset: 0;*/
+/*  }*/
+
+
+/* .pos-rel{*/
+/*     position:relative;*/
+/* }*/
+
+/* .height-one-third {*/
+/*     height: 33.333333333%;*/
+/* }*/
+
+/* .height-two-thirds {*/
+/*     height: 66.666666666%;*/
+/* }*/
+
+/* .height-one-quarter {*/
+/*     height: 25%;*/
+/* }*/
+
+/* .half-height {*/
+/*     height: 50%;*/
+/* }*/
+
+/* .height-three-quarters {*/
+/*     height: 75%;*/
+/* }*/
+
+/* .height-one-fifth {*/
+/*     height: 20%;*/
+/* }*/
+
+/* .height-two-fifths {*/
+/*     height: 40%;*/
+/* }*/
+
+/* .height-three-fifths {*/
+/*     height: 60%;*/
+/* }*/
+
+/* .height-four-fifths {*/
+/*     height: 80%;*/
+/* }*/
+
+/* .full-height {*/
+/*     height: 100%;*/
+/* }*/
+
+/* .width-one-third {*/
+/*     width: 33.333333333%;*/
+/* }*/
+
+/* .width-two-thirds {*/
+/*     width: 66.666666666%;*/
+/* }*/
+
+/* .width-one-quarter {*/
+/*     width: 25%;*/
+/* }*/
+
+/* .half-width {*/
+/*     width: 50%;*/
+/* }*/
+
+/* .width-three-quarters {*/
+/*     width: 75%;*/
+/* }*/
+
+/* .width-one-fifth {*/
+/*     height: 20%;*/
+/* }*/
+
+/* .width-two-fifths {*/
+/*     height: 40%;*/
+/* }*/
+
+/* .width-three-fifths {*/
+/*     height: 60%;*/
+/* }*/
+
+/* .width-four-fifths {*/
+/*     height: 80%;*/
+/* }*/
+
+/* .full-width {*/
+/*     width: 100%;*/
+/* }*/
+
+/* .full-size {*/
+/*     height: 100%;*/
+/*     width: 100%;*/
+/* }*/
+
+/* .center-container {*/
+/*     display: table;*/
+/*     table-layout: fixed;*/
+/* }*/
+
+.center-content {
+    display: table-cell;
+}
+
+.centered-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.flex-container {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  	-ms-flex-align: center;
+	  -webkit-box-align: center;
+    align-items: center;
+}
+
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+}
+
+/* .centered-content-vertical {*/
+/*     display: table-cell;*/
+/*     vertical-align: middle;*/
+/* }*/
+
+/* .centered-content-bottom {*/
+/*     display: table-cell;*/
+/*     vertical-align: bottom;*/
+/*     text-align: center;*/
+/* }*/
+
+/* .centered-content-horizontal {*/
+/*     display: table-cell;*/
+/*     text-align: center;*/
+/* }*/
+
+
+/* .text-left {*/
+/*     text-align: left;*/
+/* }*/
+
+/* .text-center {*/
+/*     text-align: center;*/
+/* }*/
+
+/* .text-right {*/
+/*     text-align: right;*/
+/* }*/
+
+
+
+
+/* .hide-overflow {*/
+/*     overflow: hidden;*/
+/* }*/
+
+/* .hide-overflow-x {*/
+/*     overflow-x: hidden;*/
+/* }*/
+
+/* .hide-overflow-y {*/
+/*     overflow-y: hidden;*/
+/* }*/

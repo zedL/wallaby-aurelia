@@ -1,0 +1,15 @@
+<template>
+  <require from="resources/layouts/start-layout"></require>
+  <require from="./start.css"></require>
+  <start-layout router.bind="router" class="start">
+    <div slot="actions">
+    </div>
+    <div slot="content" with.bind="userService.currentUser">
+      <div class="mdl-grid">
+        <div class="mdl-cell">
+          <p>content</p><p>content</p><p>content</p><p>content</p><p>content</p><p>content</p><p>content</p><p>content</p>
+        </div>
+      </div>
+    </div>
+  </start-layout>
+</template>

@@ -1,0 +1,16 @@
+{
+    // "extends": "./node_modules/aurelia-tools/.eslintrc.json"
+    "extends": "eslint:recommended",
+    "installedESLint": true,
+    "plugins": [
+        "standard",
+        "promise"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 6
+    }
+    // "env": {
+    //     "browser": true,
+    //     "node": true
+    // }
+}

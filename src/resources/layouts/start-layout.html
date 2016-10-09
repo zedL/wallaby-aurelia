@@ -1,0 +1,60 @@
+<template>
+  <require from="resources/elements/locale-selector/locale-selector"></require>
+  <require from="./start-layout.css"></require>
+  <div class="layout start-layout mdl-layout mdl-layout--fixed-header mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--waterfall">
+      <!-- Top row, always visible -->
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title mdl-layout--large-screen-only" t="start#topic"></span>
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+          <label class="mdl-button mdl-js-button mdl-button--icon"
+                for="waterfall-exp">
+            <i class="material-icons">search</i>
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" name="sample"
+                  id="waterfall-exp">
+          </div>
+        </div>
+      </div>
+      <!-- Bottom row, not visible on scroll -->
+      <div class="mdl-layout__header-row">
+        <slot name="actions"></slot>
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a repeat.for="nav of router.navigation"
+            class="mdl-navigation__link ${nav.isActive ? 'mdl-navigation__link--current' : ''}"
+            href.bind="nav.href"
+            t.bind="nav.settings.tTerm"></a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">sharry</span>
+      <nav class="mdl-navigation">
+        <a repeat.for="nav of router.navigation"
+            class="mdl-navigation__link ${nav.isActive ? 'mdl-navigation__link--current' : ''}"
+            href.bind="nav.href"
+            t.bind="nav.settings.tTerm"></a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <slot name="content"></slot>
+      </div>
+      <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+          <ul class="mdl-mini-footer__link-list">
+            <li><a href="#0">copyright © sharry 2016</a></li>
+          </ul>
+        </div>
+        <div class="locale-selector" as-element="locale-selector"></div>
+      </footer>
+    </main>
+  </div>
+
+</template>

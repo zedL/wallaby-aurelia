@@ -1,0 +1,21 @@
+{
+    "terms-of-use#title": "Nutzungsbedingungen & Datenschutzerklärung",
+    "terms-of-use#accept": "Akzeptieren",
+    "terms-of-use#cookies#topic": "Cookies",
+    "terms-of-use#cookies#text": "Diese Webseite verwendet Cookies. Mit dem Aktzeptieren der Nutzungsbedingungen stimmen Sie der Verwendung von Cookies ebenfalls zu.",
+    "terms-of-use#privacy-policy#text": "Datenschutzerklärung...",
+    "terms-of-use#privacy-policy#topic": "Datenschutzerklärung",
+    "terms-of-use#topic": "Nutzungsbedingungen",
+    "terms-of-use#text": "Nutzungsbedingungen...",
+    "landing#title": "Willkommen!",
+    "landing#text": "Slogan",
+    "landing#topic": "Über",
+    "imprint#topic": "Impressum",
+    "start#topic": "app title",
+    "start#owning": "Eigene",
+    "start#favorites": "Favoriten",
+    "start#recently-viewed": "Zuletzt angesehen",
+    "start#join": "Teilnehmen",
+    "app-settings#topic": "App Einstellungen",
+    "avatars#topic": "Avatars"
+}

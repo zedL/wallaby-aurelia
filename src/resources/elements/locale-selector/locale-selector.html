@@ -1,0 +1,14 @@
+<template class="locale-selector">
+  <require from="./locale-selector.css"></require>
+  <button id="locale-menu" class="mdl-button mdl-js-button mdl-button--icon">
+    <i class="material-icons">language</i>
+  </button>
+  <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="locale-menu">
+    <li class="mdl-menu__item ${item.isActive ? 'active' : ''}"
+      repeat.for="item of supportedLocales"
+      click.trigger="setLocale(item.locale)">
+          <span class="flag-circle flag-icon flag-icon-squared flag-icon-${item.flag}"></span>
+          <span class="mdl-chip__text">${item.name}</span>
+    </li>
+  </ul>
+</template>

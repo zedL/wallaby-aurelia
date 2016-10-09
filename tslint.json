@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      //"check-typecast",
+      "check-module",
+      "check-separator",
+      "check-type"
+    ]
+  }
+}

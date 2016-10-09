@@ -1,0 +1,18 @@
+{
+  "name": "aurelia",
+  "dependencies": {},
+  "globalDevDependencies": {
+    "angular-protractor": "registry:dt/angular-protractor#1.5.0+20160425143459",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160505161446",
+    "node": "registry:dt/node",
+    "selenium-webdriver": "registry:dt/selenium-webdriver#2.44.0+20160317120654"
+  },
+  "globalDependencies": {
+    "i18next": "registry:dt/i18next#2.3.4+20160803175212",
+    "i18next-browser-languagedetector": "registry:dt/i18next-browser-languagedetector#0.0.14+20160805131847",
+    "i18next-xhr-backend": "registry:dt/i18next-xhr-backend#1.2.0+20160921203958",
+    "node-uuid": "registry:dt/node-uuid#0.0.0+20160316155526",
+    "node-uuid/node-uuid-base": "registry:dt/node-uuid/node-uuid-base#0.0.0+20160316155526",
+    "node-uuid/node-uuid-cjs": "registry:dt/node-uuid/node-uuid-cjs#0.0.0+20160316155526"
+  }
+}

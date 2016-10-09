@@ -1,0 +1,19 @@
+<template>
+  <require from="./app-settings.css"></require>
+  <require from="resources/layouts/views-layout"></require>
+  <views-layout router.bind="router" topic-term.bind="topicTerm" class="app-settings">
+    <div slot="content">
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col">
+          <h4>app settings formular</h4>
+          <a route-href="route: start" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+        Startpage
+      </a>
+          <a click.trigger="saveSettings()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        save settings
+      </a>
+        </div>
+      </div>
+    </div>
+  </views-layout>
+</template>

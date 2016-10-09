@@ -1,0 +1,28 @@
+@import 'layout';
+
+.views-layout {
+
+  .mdl-layout__header-row .mdl-layout-title,
+    .mdl-layout__header-row:last-of-type {
+      display: none;
+    }
+
+}
+
+@media screen and (min-width: 760px){
+
+  .views-layout {
+
+    .mdl-layout__header-row .mdl-layout-title{
+      display: block;
+    }
+
+    .mdl-layout__header-row:last-of-type{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+  }
+
+}

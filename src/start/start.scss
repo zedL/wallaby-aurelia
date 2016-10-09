@@ -1,0 +1,44 @@
+.start {
+
+  /* actions / buttons */
+
+  $button-size-phone: 60px;
+
+  .start_create-room,
+  .start_create-avatar
+  {
+    min-width: $button-size-phone;
+    min-height: $button-size-phone;
+    width: $button-size-phone;
+    height: $button-size-phone;
+
+    background-size: 130%;
+    background-position: center;
+  }
+
+  .start_create-room{
+    background-image: url(/img/room/create-new.png);
+    margin-right: 16px;
+  }
+
+  .start_create-avatar{
+    background-image: url(/img/avatar/create-new.png);
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .start {
+    $button-size: 80px;
+
+    .start_create-room,
+    .start_create-avatar
+    {
+      min-width: $button-size;
+      min-height: $button-size;
+      width: $button-size;
+      height: $button-size;
+    }
+
+  }
+
+}

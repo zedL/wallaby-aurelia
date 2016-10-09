@@ -1,0 +1,20 @@
+@import 'layout';
+
+.start-layout {
+
+    .mdl-layout__header-row:last-of-type {
+      height: 84px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px){
+  .start-layout {
+
+    .mdl-layout__header-row:last-of-type {
+      height: 104px;
+    }
+
+  }
+}

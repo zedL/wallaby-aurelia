@@ -1,0 +1,46 @@
+@import "../../../node_modules/material-design-lite/src/_color-definitions";
+@import "../../../node_modules/material-design-lite/src/_variables";
+
+.layout{
+  background-color: $footer-bg-color;
+
+  .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+    padding-right: 0;
+  }
+
+  .page-content {
+    background-color: white;
+  }
+
+  footer {
+      padding: 24px 16px;
+      position: relative;
+      .mdl-mini-footer__left-section{
+        width: 100%;
+      }
+    }
+
+  .locale-selector {
+    box-sizing: border-box;
+    position: absolute;
+    right: 12px;
+    bottom: 20px;
+  }
+
+  .mdl-layout-title,
+  .mdl-navigation__link {
+    text-transform: capitalize;
+  }
+}
+
+@media screen and (min-width: 760px){
+  .layout{
+    .locale-selector {
+      bottom: initial;
+    }
+  }
+}
+
+/* $layout-screen-size-threshold: 1024px !default;*/
+/* $grid-desktop-breakpoint: 840px !default;*/
+/* $grid-tablet-breakpoint: 480px !default;*/
