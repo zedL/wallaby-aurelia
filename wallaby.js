@@ -36,9 +36,9 @@ module.exports = function () {
       wallaby.delayStart();
 
       requirejs.config({
-        paths: {
-          // paths
-        }
+        packages: [
+          // packages
+        ]
       });
 
       require(['/test/unit/setup.js'].concat(wallaby.tests), function () {
@@ -46,24 +46,28 @@ module.exports = function () {
       });
     }).toString()
       .replace(
-      '// paths',
-      aureliaJson.build.bundles[1].dependencies.reduce(function (prev, curr) {
-        var moduleName, modulePath;
-        if (curr.path) {
-          moduleName = curr.name;
-          modulePath = '/' + path.relative(
-            __dirname,
-            path.resolve(__dirname, 'aurelia_project', curr.path))
-            .split('\\').join('/');
-          if (curr.main) {
-            modulePath += '/' + curr.main;
+        '// packages',
+        aureliaJson.build.bundles[2].dependencies.reduce(function (prev, curr) {
+          var moduleName, modulePath, moduleMain;
+          if (curr.path) {
+            moduleName = moduleMain = curr.name;
+            modulePath = path.relative(
+              __dirname,
+              path.resolve(__dirname, 'aurelia_project', curr.path))
+              .split('\\').join('/');
+            if (curr.main) {
+              moduleMain = curr.main;
+            }
           }
-        }
-        else {
-          moduleName = curr;
-          modulePath = '/node_modules/' + moduleName + '/dist/amd/' + moduleName;
-        }
-        return prev + '"' + moduleName + '": ' + '"' + modulePath + '",';
-      }, ''))
+          else {
+            moduleName = moduleMain = curr;
+            modulePath = 'node_modules/' + moduleName + '/dist/amd';
+          }
+          return prev
+            + '{ name: ' + JSON.stringify(moduleName)
+            + ', location: ' + JSON.stringify(modulePath)
+            + ', main: ' + JSON.stringify(moduleMain)
+            + '},';
+        }, ''))
   };
 };
